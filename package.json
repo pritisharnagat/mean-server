@@ -1,0 +1,39 @@
+{
+  "name": "catapult_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "crypto": "0.0.3",
+    "csurf": "^1.9.0",
+    "email-existence": "^0.1.5",
+    "email-validator": "^1.0.7",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "express-validator": "^3.1.2",
+    "fs": "0.0.1-security",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.6",
+    "mongoose-unique-validator": "^1.0.4",
+    "morgan": "^1.8.1",
+    "nodemailer": "^3.1.8",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "passport-twitter": "^1.0.4",
+    "path": "^0.12.7"
+  }
+}
