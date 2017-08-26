@@ -28,6 +28,9 @@ build/Release
 
 # Dependency directories
 node_modules
+Server/node_modules
+clientGen/node_modules
+clientGen/bower_components
 jspm_packages
 .tmp/
 coverage/

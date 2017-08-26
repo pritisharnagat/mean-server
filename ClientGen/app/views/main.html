@@ -1,0 +1,24 @@
+
+<div class="row" style="margin-bottom:20px;" ng-init="getContacts()">
+    <h2>Contact List</h2>
+    <a ui-sref="add" class="btn btn-primary">Add New Contact</a>
+</div>
+<div class="row">
+    <table class="contact-table">
+        <thead>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Operation</td>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contact in contactList">
+                <td>{{contact.firstName}}</td>
+                <td>{{contact.lastName}}</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Del</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
