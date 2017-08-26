@@ -26,6 +26,29 @@ router.post('/contact', function(req, res, next){
     });
 });
 
+// Retriving Contacts
+router.put('/contacts/:contactId', function(req, res, next){
+    //res.send('Retreving Contact List..');
+    Contact.findOneAndUpdate({"_id": req.params.contactId },
+    {
+        $set: {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName
+        }
+    },
+    {
+        sort: {_id: -1},
+        upsert: true
+    },
+    function(err, result){
+        if(err){
+            res.json(err);
+        } else {
+            res.json(result);
+        }
+    });
+});
+
 // Deleting Contact
 router.delete('/contact/:contactId', function(req, res, next){
     Contact.remove({_id: req.params.contactId}, function(err, result){
