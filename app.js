@@ -42,6 +42,7 @@ app.use('/api', route);
 
 // Testing Route
 app.get('/', function(req, res){
+    console.log('Response -- ', res);
    res.send('Hello'); 
 });
 
